@@ -1,0 +1,145 @@
+1- Corrige los siguientes ejemplos para que sean correctos y a continuación muestra el resultado.
+
+a)
+ <?xml version="1.0" encoding="UTF-8"?>
+ <nombre>Richal</nombre>
+b)
+ <?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+ <nombre>Richal</nombre>
+ <email>richal@ejemplo.com</email>
+</agenda>
+c)
+<?xml version="1.0" encoding="UTF-8" ?>
+ <ALBUM>
+ <autor>SABINA Y CIA Nos sobran los motivos</autor>
+ <titulo>Joaquín Sabina</titulo>
+ <formato>MP3</formato>
+ <localizacion>Varios CD5 </localizacion>
+ </ALBUM>
+
+
+
+
+2- Representar la estructura en árbol, y después escribir un documento XML que represente la
+siguiente información sobre la carta del menú de desayunos de un restaurante:
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Francisco Javier Sanchez Temprano #6481 -->
+<!--LMSXI Boletin 1 -->
+<menu>
+<plato>
+	<nombre>Gofres Belgas</nombre>
+	<precio>5,95</precio>
+	<descripcion>Dos de nuestros famosos Gofres</descripcion>
+	<calorias>650</calorias>
+    </plato>
+   <plato>
+	<nombre>Gofres Belgas con fresas</nombre>
+	<precio>7,95</precio>
+	<descripcion>Ligeros gofres belgas con fresas</descripcion>
+	<calorias>900</calorias>
+    </plato>
+   <plato>
+	<nombre>Gofres Belgas con frutos del bosque</nombre>
+	<precio>8,95</precio>
+	<descripcion>Ligeros gofres belgas con frutos del bosque</descripcion>
+	<calorias>900</calorias>
+    </plato>
+   <plato>
+	<nombre>Tostada Francesa</nombre>
+	<precio>4,50</precio>
+	<descripcion>Dos gruesas rebanadas de nuestro pan frances</descripcion>
+	<calorias>600</calorias>
+    </plato>
+   <plato>
+	<nombre>Desayuno de la casa</nombre>
+	<precio>6,95</precio>
+	<descripcion>Dos huevos, bacon o salchicha, tostada y patatas fritas</descripcion>
+	<calorias>950</calorias>
+    </plato>
+</menu>
+
+
+3- Pon un ejemplo de cada uno de los apartados siguientes:
+a)
+ El elemento, al que llamamos elemento raíz o documento, no puede formar parte del
+contenido de ningún otro elemento
+
+<?xml version="1.0" encoding="UTF-8" ?>
+   <plato>
+	<nombre>Gofres Belgas</nombre>
+	<precio>5,95</precio>
+    </plato>
+
+b)
+El nombre de un elemento debe ser igual en las etiquetas inicial y final. En los nombres se
+distinguen mayúsculas y minúsculas.
+<?xml version="1.0" encoding="UTF-8" ?>
+   <Plato>
+	<nombre>Gofres Belgas</nombre>
+	<precio>5,95</precio>
+    </Plato>
+
+c)
+Si la etiqueta inicial está dentro de un elemento, la etiqueta final también debe estar dentro del
+mismo elemento. Para decirlo más facil, los elementos, enmarcados por una etiqueta inicial y
+otra final, deben anidarse adecuadamente unos en otros
+<?xml version="1.0" encoding="UTF-8" ?>
+   <plato>
+	<nombre>Gofres Belgas</nombre>
+	<precio>5,95</precio>
+    </plato>
+
+d)
+Todo elemento cuyo principio se marca con una etiqueta inicial, debe marcarse con una
+etiqueta final que repita el nombre del elemento, expresado igual que en la etiqueta inicial. El
+texto contenido entre la etiqueta inicial y la etiqueta final se llama contenido del elemento. Un
+elemento sin contenido puede tomar una forma especial <nombre/>. La barra situada antes de
+> sustituye la etiqueta final
+<?xml version="1.0" encoding="UTF-8" ?>
+<dato></dato>      ==     <dato/>
+
+
+e)
+Los nombres de los elementos pueden incluir letras, números, guiones, guiones bajos, comas y
+puntos. La coma se puede usar sólo en un caso especial, cuando separa lo que llamamos
+namespace. Los nombres de elemento que comienzan con xml, XML u otras combinaciones de
+esta clase de cadena están reservadas para el standard.
+
+
+<elementoA1-2_3> </elementoA1-2_3>
+
+f)
+ Un elemento puede tener varios, uno o ningún atributo. En los nombres de atributo pueden
+utilizarse los mismos caracteres permitidos que en los nombres de elemento. El nombre del
+atributo y su valor se separan con =. El valor del atributo debe darse entre apostrofes '...' o
+comillas dobles "..." . Si se usan comillas o apostrofes en el contenido del atributo, se utilizará
+el contrario como marcador.
+
+ <?xml version="1.0" encoding="UTF-8"?>
+
+<ejemplo atributo="C&amp;A">ropa</ejemplo>
+
+
+g)
+Los caracteres < y & no pueden usarse en el texto, puesto que se usan como marcas. Si se
+necesitan, debe usarse &lt; en vez de < y &amp; en lugar de &
+
+5<100 = <datos>5&lt;100</datos>
+C&A = <tienda>C$amp;A</tienda>
+
+h)
+También pueden sustituirse los caracteres >, ", ' , respectivamente con &gt; , &quot; y &apos;
+
+5>100 = <datos>5&gt;100</datos>
+"texto" = <cita>&quot;texto&quot;</cita>
+‘texto’ = <cita>&apos;texto&apos;</cita>
+
+
+i)
+Pueden aparecer comentarios en cualquier parte de un documento, fuera de las etiquetas. Un
+procesador de Xml puede hacer que un programa lea el texto de los comentarios, pero no
+necesariamente. No puede incluirse la cadena "--" (dos guiones) dentro de un comentario.
+
+<!-- ejemplo de marcado de un comentario-->
