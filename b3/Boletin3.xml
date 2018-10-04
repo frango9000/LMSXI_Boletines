@@ -1,0 +1,126 @@
+1-
+Forma 1
+<?xml version="1.0" encoding="ISO-8859-1" ?> <!--  xml version="5.0" no existe -->
+
+<breakfast_menu titulo="menú"> <!-- atributo debe ir entre ""-->
+  <food>
+    <name>Belgian Waffles</name>
+    <price>5.95</price>
+                                           <!-- simbolo $ no esta en encoding="ISO-8859-1" -->
+    <description>Una descripción en griego omega</description>
+                                           <!-- simbolo Ω no esta en encoding="ISO-8859-1" -->
+    <calories>650</calories>
+ </food> <!--etiqueta de cierre mal formada  <food> -->
+ <food>
+    <name>Strawberry Belgian Waffles</name>
+    <price>7.95</price>
+                                           <!-- simbolo $ no esta en encoding="ISO-8859-1" -->
+    <description>Otra descripción</description>
+    <calories>900</calories>
+  </food>
+</breakfast_menu><!--  cierre etiqueta raiz -->
+
+
+2-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Musica>
+  <CD>
+    <titulo> titulo 1</titulo>  
+    <artista>nombre 1</artista>
+    <precio>5€</precio>
+  </CD>
+    <CD>
+    <titulo> titulo 2</titulo>  
+    <artista>nombre 2</artista>
+    <precio>6€</precio>
+  </CD>
+    <CD>
+    <titulo> titulo 3</titulo>  
+    <artista>nombre 3</artista>
+    <precio>7€</precio>
+  </CD>
+</Musica>
+
+
+
+
+3-
+
+
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<Hoteles>
+  <Hotel>
+    <Nombre> Hotel 1</Nombre>  
+    <teléfono>999 999 999</teléfono>
+    <dirección>
+      <calle>calle 1</calle>
+      <numero>3</numero>
+    </dirección>
+    <ciudad> vigo</ciudad>  
+    <pais>españa</pais>
+    <estrellas>4</estrellas>
+    <descripcion> descripcion</descripcion>  
+    <habitaciones>
+      <habitaciones_individuales>10</habitaciones_individuales>
+      <habitaciones_dobles>12</habitaciones_dobles>
+      <habitaciones_triples>20</habitaciones_triples>
+      <habitaciones_suite>81</habitaciones_suite>
+    </habitaciones>
+  </Hotel>
+</Hoteles>
+ 
+
+
+
+4-
+
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<pedidos>
+  <pedido>
+    <numero_pedido>5166</numero_pedido>
+    <prioridad>Urgente</prioridad>
+    <fecha_pedido>
+      <dia>15</dia>
+      <mes>09</mes>
+      <anho>2011</anho>
+    </fecha_pedido>
+    <datos_cliente>
+     <nombre_cliente>Roberto Movilla</nombre_cliente>
+     <direccion_entrega>
+      <entregar_a>Alicia Abad</entregar_a>
+      <calle>Plaza de la Duquesa</calle>
+      <numero_propiedad>12</numero_propiedad>
+      <poblacion>Albacete</poblacion>
+      <codigo_postal>05020</codigo_postal>
+    </direccion_entrega>
+    <direccion_facturacion>
+      <calle>General Ricardos</calle>
+      <numero_propiedad>56</numero_propiedad>
+      <poblacion>Madrid</poblacion>
+      <codigo_postal>28055</codigo_postal>
+     </direccion_facturacion>
+    </datos_cliente>
+    <articulos>
+      <articulo numero="1">
+        <codigo>872-AA</codigo>
+        <cantidad>1</cantidad>
+        <nombre>Cortadora</nombre>
+        <precio>148.95€</precio>
+      </articulo>
+      <articulo numero="2">
+        <codigo> 926-FH</codigo>
+        <cantidad>3</cantidad>
+        <nombre>Podadora</nombre>
+        <precio>7.98€</precio>
+      </articulo>
+    </articulos>
+  </pedido>
+</pedidos>
