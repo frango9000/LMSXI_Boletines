@@ -1,0 +1,93 @@
+Documentos XML bien formados
+Los siguientes documentos no están bien formados porque cada uno contiene dos errores (dos errores del mismo tipo cuentan como uno sólo). Corrige los errores y comprueba si ya son documentos bien formados (si para corregir algún error hay que inventarse una etiqueta o atributo, utiliza un nombre que tenga relación con la información contenida en el documento).
+
+
+
+
+
+
+1-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<boletin2>
+<autor>barto  <!-- Etiqueta inicial mal formada <autor /> -->
+<pelicula>
+ 	<titulo>Con faldas y a lo loco</titulo>
+ 	<director>Billy Wilder</director>
+</pelicula>
+<pelicula>
+ 	<director>Leo McCarey</director>
+ 	<titulo>Sopa de ganso</titulo>
+</pelicula>
+</autor>       <!-- elemento raiz que englobe el resto de elementos-->
+
+
+
+
+
+
+2-
+
+<deportistas>
+<deportista deporte="Atletismo"><!--deporte es un atributo del deportista -->
+ 		<nombre>Jesse Owens</nombre>
+ 	</deportista>				<!--hay que cerrar el elemento deportista -->
+ 	<deportista deporte="Natación">
+ 		 <nombre>Mark Spitz</nombre>
+ 	</deportista>
+</deportistas>
+
+
+
+3-
+
+<texto>
+<Titulo>XML explicado a los niños</Titulo>
+					 <!-- Etiqueta de apertura y clausura diferente</titulo>"  -->
+ 	<parrafo>El
+		<abreviatura>XML</abreviatura>
+		define cómo crear
+		 lenguajes de marcas.
+</parrafo>
+	<parrafo>Las marcas se añaden a un documento de texto
+ para añadir información.
+	</parrafo>
+ 	<http>www.example.org</http><!-- Etiqueta mal formada “<http://>" -->
+</texto>
+
+
+
+4-
+
+<geografia_mundial>   <!-- etiqueta raiz mal formada “<geografia mundial>" -->
+ 	<paises><!-- etiqueta nombrada igual a elementos contenidos por esta “ <pais>" -->
+ 		<pais>España</pais>
+ 		<continente>Europa</continente>
+		<capital>Madrid</capital>
+	</paises>
+</geografia_mundial>
+
+
+
+5-
+
+<programas>
+ 	<programa nombre="Firefox" licencia="GPL" licencia2="MPL"/>
+			<!-- atributo licencia declarado 2 veces: licencia="GPL" licencia="MPL" -->
+ 	<programa nombre="OpenOffice.org" licencia="LGPL" />
+				<!-- valor del atributo licencia debe ir entre “" licencia=LGPL-->
+ 	<programa nombre="Inkscape" licencia="GPL" />
+</programas>
+
+
+
+6-
+
+<mundiales-de-futbol>
+	<mundial>
+		<pais>España</pais>		 <!--elemento mal formado : <pais="España" /> -->
+ 		<anho>1982</anho>			 <!--elemento mal formado : <1982 /> -->
+ 	</mundial>
+</mundiales-de-futbol>
+</boletin2>
+
