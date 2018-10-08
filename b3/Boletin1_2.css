@@ -1,0 +1,5 @@
+menu {background-color:beige}
+nombre, precio, descripcion, plato {display:block;}
+nombre {color:blue; font-weight:bolder; text-decoration:underline;}
+precio {color:green;}
+descripcion {color:red; display:block;}

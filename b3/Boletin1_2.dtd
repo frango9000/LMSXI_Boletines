@@ -1,0 +1,5 @@
+<!ELEMENT menu (plato)>
+<!ELEMENT plato (nombre, precio, descripcion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

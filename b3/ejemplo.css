@@ -1,0 +1,5 @@
+personas {background-color:black}
+nombre, direccion, telefono {display:block;}
+nombre {color:cyan; font-weight:bolder;}
+direccion {color:green; text-decoration: underline;}
+telefono {color:red; }

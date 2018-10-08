@@ -1,0 +1,18 @@
+﻿<?xml-stylesheet type="text/css" href="ejemplo.css"?>
+<personas>
+  <persona>
+    <nombre> nombre 1</nombre>  
+    <direccion>direccion 1</direccion>
+    <telefono>986 000001</telefono>
+  </persona>
+    <persona>
+    <nombre> nombre 2</nombre>  
+    <direccion>direccion 2</direccion>
+    <telefono>986 000002</telefono>
+  </persona>
+    <persona>
+    <nombre> nombre 3</nombre>  
+    <direccion>direccion 3</direccion>
+    <telefono>986 000003</telefono>
+  </persona>
+</personas>

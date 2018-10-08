@@ -1,0 +1,35 @@
+﻿<?xml-stylesheet type="text/css" href="Boletin1_2.css"?>
+<!-- Francisco Javier Sanchez Temprano #6481 -->
+<!--LMSXI Boletin 1_2 -->
+<menu>
+<plato>
+	<nombre>Gofres Belgas</nombre>
+	<precio>5,95</precio>
+	<descripcion>Dos de nuestros famosos Gofres</descripcion>
+	<calorias>650</calorias>
+    </plato>
+   <plato>
+	<nombre>Gofres Belgas con fresas</nombre>
+	<precio>7,95</precio>
+	<descripcion>Ligeros gofres belgas con fresas</descripcion>
+	<calorias>900</calorias>
+    </plato>
+   <plato>
+	<nombre>Gofres Belgas con frutos del bosque</nombre>
+	<precio>8,95</precio>
+	<descripcion>Ligeros gofres belgas con frutos del bosque</descripcion>
+	<calorias>900</calorias>
+    </plato>
+   <plato>
+	<nombre>Tostada Francesa</nombre>
+	<precio>4,50</precio>
+	<descripcion>Dos gruesas rebanadas de nuestro pan frances</descripcion>
+	<calorias>600</calorias>
+    </plato>
+   <plato>
+	<nombre>Desayuno de la casa</nombre>
+	<precio>6,95</precio>
+	<descripcion>Dos huevos, bacon o salchicha, tostada y patatas fritas</descripcion>
+	<calorias>950</calorias>
+    </plato>
+</menu>
