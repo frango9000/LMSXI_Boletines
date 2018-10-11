@@ -1,0 +1,51 @@
+﻿<?xml-stylesheet type="text/css" href="monumentos.css"?>
+<monumentos>
+
+<vigo>Monumentos de Vigo</vigo>
+
+<monumento>
+<nombre>
+Sireno
+</nombre>
+<caracteristicas>Obra del escultor Francisco Leiro, situada en la Puerta del Sol. 
+Está realizada en aluminio sobre columnas de granito negro pulido. 
+Instalado en 1991, la figura representa un personaje imaginario híbrido de pez y hombre.
+</caracteristicas>
+</monumento>
+
+<monumento>
+<nombre>
+Los caballos
+</nombre>
+<caracteristicas>Grupo escultórico en bronce de Juan José Oliveira que preside la Plaza de España, representa un grupo de cinco caballos ascendiendo por una cascada. El conjunto pesa 40 toneladas y alcanza los 18 metros. La base se complementa con un estanque de 10 metros de diámetro.
+Es un homenaje a los caballos salvajes que antiguamente poblaban el Monte de O Castro y que en la actualidad todavía
+ pacen en algunos montes de Vigo.
+ </caracteristicas>
+</monumento>
+
+<monumento>
+<nombre>
+Monumento al trabajo
+</nombre>
+<caracteristicas>Grupo escultórico de Ramón Conde de 1991, una de las figuras claves del arte gallego del s.XX. Situado al comienzo de la Gran Vía, está formado por siete marineros tirando de una red que sale de un mar representado por un estanque.Pretende ser un homenaje a los trabajadores del mar. El monumento mide 8,50 metros de largo; 2,50 de alto y 3 de largo.
+</caracteristicas>
+</monumento>
+
+<monumento>
+<nombre>
+Julio Verne
+</nombre>
+<caracteristicas>Escultura inaugurada el 17 de octubre de 2005. Fue esculpida en bronce por el vigués José Molares y donada, a esta ciudad, por la Asociación de Mujeres Empresarias de Pontevedra.
+Se trata de un homenaje que la ciudad de Vigo realiza a Julio Verne (en el centenario de su muerte), por su mención a esta ciudad en su libro “20.000 leguas de viaje submarino”. Representa al escritor francés sentado sobre los tentáculos de un monstruo marino o calamar gigante.
+</caracteristicas>
+</monumento>
+
+<monumento>
+<nombre>
+Aros Olímpicos
+</nombre>
+<caracteristicas>Obra de Xurxo Vázquez Pardo, escultor abstracto nacido en Vigo en 1948. Situada en la rotonda entre las avenidas Fragoso y Balaídos, fue inaugurada en 1982 con motivo de la disputa en Vigo de algunos de los partidos del Campeonato Mundial de Fútbol. Muestra un juego de líneas en movimiento que representa al atleta, al jugador.
+</caracteristicas>
+</monumento>
+
+</monumentos>
