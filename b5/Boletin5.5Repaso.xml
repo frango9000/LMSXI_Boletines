@@ -1,0 +1,291 @@
+a)
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XXX [
+ <!ELEMENT XXX (AAA*, BBB)>
+ <!ELEMENT AAA ANY>
+ <!ELEMENT BBB ANY>
+]>
+
+
+b)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XXX [
+ <!ELEMENT XXX (AAA+, BBB)>
+ <!ELEMENT AAA ANY>
+ <!ELEMENT BBB ANY>
+]>
+
+c)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XXX [
+ <!ELEMENT XXX (AAA?, BBB)>
+ <!ELEMENT AAA ANY>
+ <!ELEMENT BBB ANY>
+]>
+
+d)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XXX [
+ <!ELEMENT XXX (AAA?, BBB+)>
+ <!ELEMENT AAA (CCC?, DDD+)>
+ <!ELEMENT BBB (CCC, DDD)>
+ <!ELEMENT CCC ANY>
+ <!ELEMENT DDD ANY>
+]>
+e)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE XXX [
+ <!ELEMENT XXX (AAA, BBB)>
+ <!ELEMENT AAA (CCC, DDD)>
+ <!ELEMENT BBB (CCC| DDD)>
+ <!ELEMENT CCC ANY>
+ <!ELEMENT DDD ANY>
+]>
+
+f)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE AAA [
+ <!ELEMENT AAA (BBB | CCC)>
+ <!ELEMENT BBB ANY>
+ <!ELEMENT CCC ANY>
+]>
+
+
+
+
+2-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE valores [
+ <!ELEMENT valores (accion)>
+ <!ELEMENT accion  (mercado, mercadoabierto)>
+ <!ELEMENT mercado (#PCDATA)>
+ <!ELEMENT mercadoabierto (#PCDATA)>
+]>
+<valores>
+<accion>
+<mercado> Madrid </mercado>
+<mercadoabierto> Si </mercadoabierto>
+</accion>
+</valores>
+
+3-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda [
+ <!ELEMENT agenda (persona*)>
+ <!ELEMENT persona  (nombre, tlf)>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT tlf (#PCDATA)>
+]>
+ <agenda>
+    <persona>
+                <nombre>Ricardo Borriquero</nombre>
+       <tlf>951345678</tlf>
+           </persona>
+      <persona>
+      <nombre>Eva Risto</nombre>
+     <tlf>955837659</tlf>
+       </persona>
+    </agenda>
+
+
+
+4-
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE citas [
+ <!ELEMENT citas (cita*)>
+ <!ELEMENT cita  (autor, fechas,texto )>
+ <!ELEMENT autor (#PCDATA)>
+ <!ELEMENT fechas (#PCDATA)>
+ <!ELEMENT texto (#PCDATA)>
+]>
+       <citas>
+           <cita>
+           <autor>Groucho Marx</autor>
+           <fechas>1890 - 1977</fechas>
+           <texto>No reírse de nada es de tontos, reírse de todo es de estúpidos.</texto>
+         </cita>
+         <cita>
+           <autor>Isaac Asimov</autor>
+           <fechas>1920 - 1992</fechas>
+           <texto>La primera ley de la dietética parece ser: si está bueno, es malo para usted.</texto>
+         </cita>
+         <cita>
+           <autor>Will Rogers</autor>
+           <fechas>1879 - 1935</fechas>
+           <texto>Todo ha cambiado. La gente se toma a los humoristas en serio y a los políticos en broma.</texto>
+         </cita>
+       </citas>
+
+
+5-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libros [
+ <!ELEMENT libros (libro*)>
+ <!ELEMENT libro ANY>
+ <!ELEMENT informatica EMPTY>
+ <!ELEMENT electronica EMPTY>
+]>
+       <libros>
+         <libro>
+           <libro>     </libro>
+           <informatica/>
+         </libro>
+        <libro>
+           <libro>     </libro>
+           <electronica/>
+         </libro>
+       </libros>
+
+
+6-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE contabilidad [
+ <!ELEMENT contabilidad (notas*)>
+ <!ELEMENT notas ((ingreso|gasto), fecha, cantidad, concepto)>
+ <!ELEMENT ingreso EMPTY>
+ <!ELEMENT gasto EMPTY>
+ <!ELEMENT fecha (#PCDATA)>
+ <!ELEMENT cantidad (#PCDATA)>
+ <!ELEMENT concepto (#PCDATA)>
+]>
+       <contabilidad>
+         <notas>
+           <ingreso/>
+           <fecha>14 de octubre de 2013</fecha>
+           <cantidad>1800 €</cantidad>
+           <concepto>Ventas</concepto>
+        </notas>
+         <notas>
+           <gasto/>
+           <fecha>11 de febrero de 2013</fecha>
+           <cantidad>44,25 €</cantidad>
+           <concepto>Recibo agua</concepto>
+          </notas>
+       <notas>
+           <ingreso/>
+           <fecha>12 de octubre de 2013</fecha>
+           <cantidad>18000 €</cantidad>
+           <concepto>Premio lotería</concepto>
+        </notas>
+       </contabilidad>
+
+7-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clients [
+ <!ELEMENT clients (person*)>
+ <!ELEMENT person (name, cod*, visa*)>
+ <!ELEMENT cod EMPTY>
+ <!ELEMENT name (#PCDATA)>
+ <!ELEMENT visa (#PCDATA)>
+]>
+<clients>
+<person>
+<name> Pedro </name>
+<cod/>
+<visa> 262323 </visa>
+</person>
+<person>
+<name> Homer </name>
+<visa> 24523 </visa>
+</person>
+<person>
+<name> Terrance </name>
+<cod/>
+<visa> 24354 </visa>
+</person>
+</clients>
+
+
+8-
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE lenguajes [
+ <!ELEMENT lenguajes (lenguaje*)>
+ <!ELEMENT lenguaje (nombre, creador, fecha, (compilado | interpretado))>
+ <!ELEMENT compilado EMPTY>
+ <!ELEMENT interpretado EMPTY>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT creador (#PCDATA)>
+ <!ELEMENT fecha (#PCDATA)>
+]>
+<lenguajes>
+  <lenguaje>
+    <nombre>C</nombre>
+    <creador>Dennis Ritchie</creador>
+    <fecha>1973</fecha>
+    <compilado />
+  </lenguaje>
+  <lenguaje>
+    <nombre>Python</nombre>
+    <creador>Guido van Rossum</creador>
+    <fecha>1991</fecha>
+    <interpretado />
+  </lenguaje>
+  <lenguaje>
+    <nombre>PHP</nombre>
+    <creador>Rasmus Lerdorf</creador>
+    <fecha>1995</fecha>
+    <interpretado />
+  </lenguaje>
+  <lenguaje>
+    <nombre>XSLT</nombre>
+    <creador>James Clark</creador>
+    <fecha>1998</fecha>
+    <interpretado />
+  </lenguaje>
+</lenguajes>
+
+
+9-
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE paises [
+ <!ELEMENT paises (pais*)>
+ <!ELEMENT pais (nombre, superficie, frontera*, moneda, monedaanterior?, (monarquia | republica))>
+ <!ELEMENT monarquia EMPTY>
+ <!ELEMENT republica EMPTY>
+ <!ELEMENT nombre (#PCDATA)>
+ <!ELEMENT superficie (#PCDATA)>
+ <!ELEMENT frontera (#PCDATA)>
+ <!ELEMENT moneda (#PCDATA)>
+ <!ELEMENT monedaanterior (#PCDATA)>
+]>
+<paises>
+  <pais>
+    <nombre>España</nombre>
+    <superficie>504.645 km²</superficie>
+    <frontera>Francia</frontera>
+    <moneda>Euro</moneda>
+    <monedaanterior>Peseta</monedaanterior>
+    <monarquia />
+  </pais>
+  <pais>
+    <nombre>Francia</nombre>
+    <superficie>675.417 km²</superficie>
+    <frontera>España</frontera>
+    <frontera>Suiza</frontera>
+    <moneda>Euro</moneda>
+    <monedaanterior>franco francés</monedaanterior>
+    <republica />
+  </pais>
+  <pais>
+    <nombre>Suiza</nombre>
+    <superficie>41.290 km²</superficie>
+    <frontera>Francia</frontera>
+    <moneda>franco suizo</moneda>
+    <republica />
+  </pais>
+</paises>
