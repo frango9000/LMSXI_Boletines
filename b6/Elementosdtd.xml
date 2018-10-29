@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="ejemplo.css"?>
+<!DOCTYPE datos[
+<!ELEMENT datos (nombre, direccion)>
+<!ELEMENT nombre (#PCDATA)>
+<!ATTLIST nombre dni CDATA #FIXED "53669">
+<!ELEMENT direccion (#PCDATA)>
+<!ENTITY nom "Mi nombre es: ">
+<!ENTITY dir "La direccion res: ">
+]>
+<datos>
+<nombre dni ="53669">&nom; Francisco Sanchez</nombre>
+<direccion>&dir; Calle tpm</direccion>
+</datos>
