@@ -1,0 +1,162 @@
+1- Definir un documento XML que ofrezca un listado de 1 o más editoriales, donde cada editorial presenta la siguiente información: nombre, dirección, email, página, teléfono y fax. Definir su correspondiente DTD y construir el fichero XML válido con respecto a éste.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editoriales[
+<!ELEMENT editoriales (editorial*)>
+<!ELEMENT editorial (nombre, direccion, email, pagina, telefono, fax)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT pagina (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+<!ELEMENT fax (#PCDATA)>
+]>
+<editoriales>
+<editorial>
+<nombre>Editorial </nombre>
+<direccion>Calle</direccion>
+<email>correo</email>
+<pagina>web</pagina>
+<telefono>132</telefono>
+<fax>321</fax>
+</editorial>
+<editorial>
+<nombre>Editorial 2</nombre>
+<direccion>Calle</direccion>
+<email>correo</email>
+<pagina>web</pagina>
+<telefono>132</telefono>
+<fax>321</fax>
+</editorial>
+</editoriales>
+
+
+
+
+2- Definir el correspondiente DTD para el siguiente documento XML:
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libro[
+<!ELEMENT libro (titulo, disponible, autor, formato, publicacion, precio, descuento, enlacelibro)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT autor (#PCDATA)>
+<!ELEMENT formato (#PCDATA)>
+<!ELEMENT publicacion (#PCDATA)>
+<!ELEMENT disponible EMPTY>
+<!ATTLIST disponible tiempo NMTOKEN #REQUIRED>
+<!ATTLIST disponible unidad CDATA #REQUIRED>
+<!ELEMENT precio EMPTY>
+<!ATTLIST precio cantidad NMTOKEN #REQUIRED>
+<!ATTLIST precio moneda CDATA #REQUIRED>
+<!ELEMENT descuento EMPTY>
+<!ATTLIST descuento cantidad NMTOKEN #REQUIRED>
+<!ELEMENT enlacelibro EMPTY>
+<!ATTLIST enlacelibro href CDATA #REQUIRED>
+
+<!ELEMENT fax (#PCDATA)>
+]>
+<libro>
+<titulo> Cien años de soledad </titulo>
+<disponible tiempo="24" unidad="horas"/>
+<autor> Gabriel García Márquez </autor>
+<formato> Rústica </formato>
+<publicacion>1967 </publicacion>
+<precio cantidad="9.99" moneda="euro"/>
+<descuento cantidad="5"/>
+<enlacelibro href="/exec/ISBN/84-473-0619-4"/>
+</libro>
+
+3- Definir el correspondiente DTD para el siguiente documento XML:
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE clinicas[
+<!ELEMENT clinicas (clinica*)>
+<!ELEMENT clinica (cita*)>
+<!ATTLIST clinica nombre CDATA #REQUIRED>
+<!ELEMENT cita (medico, paciente)>
+<!ATTLIST cita fecha CDATA #REQUIRED>
+<!ELEMENT medico (especialidad)>
+<!ATTLIST medico nif NMTOKEN #REQUIRED>
+<!ATTLIST medico nombre CDATA #REQUIRED>
+<!ATTLIST medico apellidos CDATA #REQUIRED>
+<!ELEMENT especialidad (#PCDATA)>
+<!ELEMENT paciente (diagnostico)>
+<!ATTLIST paciente nif NMTOKEN #REQUIRED>
+<!ATTLIST paciente nombre CDATA #REQUIRED>
+<!ELEMENT diagnostico (#PCDATA)>
+]>
+
+<clinicas>
+<clinica nombre ="vista hermosa">
+<cita fecha="10/10/2010">
+<medico nif="d16345665465" nombre="pepe" apellidos="moreno">
+<especialidad>traumatologia</especialidad>
+</medico>
+<paciente nif="100000001A" nombre="Drenthe">
+<diagnostico>ulcera de estómago</diagnostico>
+</paciente>
+</cita>
+<cita fecha="12/10/2010">
+<medico nif="5258020000B" nombre="luis" apellidos="moreno">
+<especialidad>traumatologia</especialidad>
+</medico>
+<paciente nif="d00000002A" nombre="Mujer de Drenthe">
+<diagnostico>parto</diagnostico>
+</paciente>
+</cita>
+</clinica>
+</clinicas>
+4- Definir un DTD y su correspondiente fichero XML válido con respecto a éste que almacene la siguiente información para los elementos de la tabla periódica:
+Listado de uno o más átomos, donde cada átomo:
+• Tiene un atributo estado.
+• Un elemento nombre.
+• Un elemento símbolo.
+• Un elemento número atómico.
+• Un elemento peso atómico.
+• Un elemento punto de ebullición con un atributo unidades,
+• Un elemento punto de fusión con un atributo unidades
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos[
+<!ELEMENT elementos (elemento*)>
+<!ELEMENT elemento (nombre, simbolo, numeroatomico, pesoatomico, ebullicion, fusion)>
+<!ATTLIST elemento estado CDATA #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT simbolo (#PCDATA)>
+<!ELEMENT numeroatomico (#PCDATA)>
+<!ELEMENT pesoatomico (#PCDATA)>
+<!ELEMENT ebullicion (#PCDATA)>
+<!ATTLIST ebullicion unidades CDATA #REQUIRED>
+<!ELEMENT fusion (#PCDATA)>
+<!ATTLIST fusion unidades CDATA #REQUIRED>
+]>
+
+<elementos>
+<elemento estado="gas">
+<nombre>Hidrogeno</nombre>
+<simbolo>H</simbolo>
+<numeroatomico>1</numeroatomico>
+<pesoatomico>1.008</pesoatomico>
+<ebullicion unidades="C">-253</ebullicion>
+<fusion unidades="C">-259</fusion>
+</elemento>
+<elemento estado="solido">
+<nombre>Carbon</nombre>
+<simbolo>C</simbolo>
+<numeroatomico>6</numeroatomico>
+<pesoatomico>12.01</pesoatomico>
+<ebullicion unidades="K">5100</ebullicion>
+<fusion unidades="K">3823</fusion>
+</elemento>
+<elemento estado="liquido">
+<nombre>Mercurio</nombre>
+<simbolo>Hg</simbolo>
+<numeroatomico>80</numeroatomico>
+<pesoatomico>200.59</pesoatomico>
+<ebullicion unidades="C">357</ebullicion>
+<fusion unidades="C">-39</fusion>
+</elemento>
+</elementos>
