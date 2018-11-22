@@ -1,0 +1,211 @@
+1)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cli:cliente[
+<!ELEMENT cli:cliente (cli:numero_ID, cli:nombre, cli:telefono, ped:pedido)>
+<!ELEMENT cli:numero_ID (#PCDATA)>
+<!ELEMENT cli:nombre (#PCDATA)>
+<!ELEMENT cli:telefono (#PCDATA)>
+<!ELEMENT ped:pedido (ped:numero_ID, ped:articulo, ped:precio)>
+<!ELEMENT ped:numero_ID (#PCDATA)>
+<!ELEMENT ped:articulo (#PCDATA)>
+<!ELEMENT ped:precio (#PCDATA)>
+<!ATTLIST cli:cliente xmlns:cli CDATA #REQUIRED>
+<!ATTLIST ped:pedido xmlns:ped CDATA #REQUIRED>
+]>
+
+<cli:cliente xmlns:cli="https://www.w3schools.com/furniture">
+    <cli:numero_ID>1232654</cli:numero_ID>
+    <cli:nombre>Jorge Ruiz</cli:nombre>
+    <cli:telefono>99999999</cli:telefono>
+    <ped:pedido xmlns:ped="https://www.w3schools.com/furniture">
+      <ped:numero_ID>6523213</ped:numero_ID>
+      <ped:articulo>Caja de herramientas</ped:articulo>
+      <ped:precio>187,90€</ped:precio>
+    </ped:pedido>
+</cli:cliente>
+
+
+
+2)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LinearLayout[
+<!ELEMENT LinearLayout (TextView*, Button*)>
+<!ELEMENT TextView EMPTY>
+<!ELEMENT Button EMPTY>
+
+<!ATTLIST LinearLayout xmlns:android CDATA #REQUIRED>
+<!ATTLIST LinearLayout android:orientation CDATA #REQUIRED>
+<!ATTLIST LinearLayout android:layout_width CDATA #REQUIRED>
+<!ATTLIST LinearLayout android:layout_height CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_width CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_height CDATA #REQUIRED>
+<!ATTLIST TextView android:text CDATA #REQUIRED>
+<!ATTLIST Button android:layout_width CDATA #REQUIRED>
+<!ATTLIST Button android:layout_height CDATA #REQUIRED>
+<!ATTLIST Button android:text CDATA #REQUIRED>
+<!ATTLIST Button id CDATA #REQUIRED>
+]>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Activity 1!"
+    />
+<TextView  
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Activity 1, second text view!"
+    />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Switch To Activity 2"
+	id="@+id/switchto2"
+    />    
+</LinearLayout>
+
+
+3)
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE manifest[
+<!ELEMENT manifest (application)>
+<!ELEMENT application (activity)>
+<!ELEMENT activity (intent-filter)>
+<!ELEMENT intent-filter (action, category)>
+<!ELEMENT action EMPTY>
+<!ELEMENT category EMPTY>
+
+<!ATTLIST manifest xmlns:android CDATA #REQUIRED>
+<!ATTLIST manifest package CDATA #REQUIRED>
+<!ATTLIST application android:icon CDATA #REQUIRED>
+<!ATTLIST activity class CDATA #REQUIRED>
+<!ATTLIST activity android:label CDATA #REQUIRED>
+<!ATTLIST action android:value CDATA #REQUIRED>
+<!ATTLIST category android:value CDATA #REQUIRED>
+]>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.msi.ibmtutorial">
+    <application android:icon="@drawable/icon">
+        <activity class=".SaySomething" android:label="@string/app_name">
+            <intent-filter>
+                <action android:value="android.intent.action.MAIN" />
+                <category android:value="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
+
+4)<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE RelativeLayout[
+<!ELEMENT RelativeLayout ((EditText | TextView | Button)*)>
+
+<!ELEMENT EditText EMPTY>
+<!ELEMENT TextView EMPTY>
+<!ELEMENT Button EMPTY>
+
+<!ATTLIST RelativeLayout xmlns:android CDATA #REQUIRED>
+<!ATTLIST RelativeLayout android:layout_width CDATA #REQUIRED>
+<!ATTLIST RelativeLayout android:layout_height CDATA #REQUIRED>
+
+<!ATTLIST EditText android:id CDATA #REQUIRED>
+<!ATTLIST EditText android:layout_width CDATA #REQUIRED>
+<!ATTLIST EditText android:layout_height CDATA #REQUIRED>
+<!ATTLIST EditText android:background CDATA #REQUIRED>
+<!ATTLIST EditText android:layout_below CDATA #REQUIRED>
+
+<!ATTLIST TextView android:id CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_width CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_height CDATA #REQUIRED>
+<!ATTLIST TextView android:text CDATA #REQUIRED>
+<!ATTLIST TextView android:layout_below CDATA #REQUIRED>
+
+<!ATTLIST Button android:id CDATA #REQUIRED>
+<!ATTLIST Button android:layout_width CDATA #REQUIRED>
+<!ATTLIST Button android:layout_height CDATA #REQUIRED>
+<!ATTLIST Button android:layout_below CDATA #IMPLIED>
+<!ATTLIST Button android:layout_alignParentLeft CDATA #IMPLIED>
+<!ATTLIST Button android:layout_toRightOf CDATA #IMPLIED>
+<!ATTLIST Button android:layout_alignTop CDATA #IMPLIED>
+<!ATTLIST Button android:onClick CDATA #REQUIRED>
+<!ATTLIST Button android:text CDATA #REQUIRED>
+
+
+]>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android/"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent">
+<EditText
+android:id="@+id/op_a"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:drawable/editbox_background"
+android:layout_below="@id/label_a"/>
+
+<TextView
+android:id="@+id/label_b"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/op_a"
+android:text="Operando B:"/>
+<EditText
+android:id="@+id/op_b"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@android:drawable/editbox_background"
+android:layout_below="@id/label_b"/>
+  <Button
+android:id="@+id/sumar"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/op_b"
+android:layout_alignParentLeft="true"
+android:onClick="cSumar"
+android:text="+"/>
+  <Button
+android:id="@+id/restar"   
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/sumar"
+android:layout_alignTop="@id/sumar"
+android:onClick="cRestar"
+android:text="-"/>
+<Button
+android:id="@+id/multiplicar"  
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/restar"
+android:layout_alignTop="@id/restar"
+android:onClick="cMultiplicar"
+android:text="*" />
+<Button
+android:id="@+id/dividir"   
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/multiplicar"
+android:layout_alignTop="@id/sumar"
+android:onClick="cDividir"
+android:text="/"/>  
+<TextView
+android:id="@+id/texto_resultado"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/dividir"
+android:text="Resultado:"/>
+<TextView
+android:id="@+id/resultado"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_below="@id/texto_resultado"
+android:text="Realice operación para obtener resultado"/>
+</RelativeLayout>
