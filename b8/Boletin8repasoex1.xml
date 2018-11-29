@@ -1,0 +1,205 @@
+       1- Explica y pon un ejemplo de un documento XML bien formado y válido.
+
+<editoriales>
+	<editorial>
+		<nombre>Editorial </nombre>
+		<direccion>Calle</direccion>
+		<email>correo</email>
+		<pagina>web</pagina>
+		<telefono>132</telefono>
+		<fax>321</fax>
+	</editorial>
+	<editorial>
+		<nombre>Editorial 2</nombre>
+		<direccion>Calle</direccion>
+		<email>correo</email>
+		<pagina>web</pagina>
+		<telefono>132</telefono>
+		<fax>321</fax>
+	</editorial>
+	</editoriales>
+
+
+2-  Entidades predefinidas y no predefinidas.
+
+
+predefinidas
+<element name="color" type="string" default="red"/>
+fijas
+<element name="color" type="string" fixed="red"/>
+
+
+
+
+3- Realiza los cambios necesarios en el DTD  para que el documento XML sea válido.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE elementos [
+   <!ELEMENT elementos (pcdata*, any+, vacio)>
+   <!ELEMENT pcdata (#PCDATA)>
+   <!ELEMENT any ANY>
+   <!ELEMENT vacio EMPTY>
+]>
+
+<elementos>
+   <any/>
+   <vacio/>
+</elementos>
+
+
+
+4- Completa y escribe un XML válido para cada uno de los apartados siguientes:
+a)  <!ATTLIST empresa ………..... CDATA …..…..... “España”>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresas [
+   <!ELEMENT empresas (empresa)>
+   <!ELEMENT empresa EMPTY>
+   <!ATTLIST empresa pais CDATA #REQUIRED>
+]>
+<empresas>
+<empresa pais="Espana" />
+</empresas>
+
+
+b)   <!ATTLIST ……....... pago (VISA|metalico|cheque) ……….….......>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE compra [
+   <!ELEMENT compra EMPTY>
+   <!ATTLIST compra pago (VISA|metalico|cheque) #REQUIRED>
+]>
+<compra pago="VISA" />
+c) <!ATTLIST ejemplo ………....... NMTOKEN ………….…...........>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejemplo [
+   <!ELEMENT ejemplo EMPTY>
+   <!ATTLIST ejemplo token NMTOKEN #REQUIRED>
+]>
+<ejemplo token="33:45" />
+
+
+
+d)  <!ATTLIST ………….…...... codigo ID ……………...…........>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejemplo [
+   <!ELEMENT ejemplo EMPTY>
+<!ATTLIST ejemplo codigo ID #REQUIRED>
+]>
+<ejemplo codigo="ID1879" />
+
+
+5- Se quiere estructurar información relativa  a  la venta  de  vehículos de  segunda mano. Para ello,  cada vehículo deberá tener asociada la siguiente información:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE vehiculos [
+   <!ELEMENT vehiculos (vehiculo) >
+   <!ELEMENT vehiculo (marca, modelo, tipo, tipocombustible, potencia, año, npuertas, color, cambio, precio,vendedor) >
+    <!ELEMENT marca (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT tipo EMPTY>
+    <!ELEMENT tipocombustible EMPTY>
+    <!ELEMENT potencia (#PCDATA)>
+    <!ELEMENT año (#PCDATA)>
+    <!ELEMENT npuertas (#PCDATA)>
+    <!ELEMENT color EMPTY>
+    <!ELEMENT cambio EMPTY>
+    <!ELEMENT precio (#PCDATA)>
+    <!ELEMENT vendedor EMPTY>
+  
+    <!ATTLIST tipo tamaño (berlina|familiar|coupe|monovolumen|todoterreno) #REQUIRED>
+    <!ATTLIST tipocombustible tipo  (gasolina|diesel|electrico) #REQUIRED>
+    <!ATTLIST color interior CDATA #REQUIRED
+			 exterior CDATA #REQUIRED>
+    <!ATTLIST cambio caja (manual|automatico) #REQUIRED>
+    <!ATTLIST vendedor tipo (particular|profesional) #REQUIRED>
+
+]>
+<vehiculos>
+<vehiculo>
+<marca>Opel</marca>
+<modelo>Corsa</modelo>
+<tipo tamaño="berlina"/>
+<tipocombustible tipo="gasolina"/>
+<potencia>90CV</potencia>
+<año>2017</año>
+<npuertas>5</npuertas>
+<color interior="negro" exterior="blanco" />
+<cambio caja="automatico" />
+<precio>5555</precio>
+<vendedor tipo="particular" />
+</vehiculo>
+</vehiculos>
+
+
+6- A partir de la DTD siguiente  deberá crearse un documento XML válido y  formateado
+
+   con el correspondiente CSS.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE documento [
+<!ELEMENT documento (cabecera,cuerpo)>
+<!ELEMENT cabecera (titulo?,metainfo*,estilo)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT metainfo EMPTY>
+<!ELEMENT estilo EMPTY>
+<!ELEMENT cuerpo (parrafo,lista*)+>
+<!ELEMENT parrafo (negrita?,subrayado?)>
+<!ELEMENT negrita (#PCDATA)>
+<!ELEMENT subrayado (#PCDATA)>
+<!ELEMENT lista (item+)>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST metainfo nombre CDATA #IMPLIED
+          contenido CDATA #IMPLIED>
+<!ATTLIST estilo tamanyo (1|2|3) #IMPLIED
+                 color (rojo|negro) "negro">
+<!ATTLIST item tipo (numerado|noNumerado) #REQUIRED>
+
+]>
+<documento>
+<cabecera>
+<titulo>Titulo</titulo>
+<metainfo nombre="nombre metadata" contenido="contenido"/>
+<estilo tamanyo="3" color="rojo" />
+</cabecera>
+<cuerpo>
+<parrafo>
+<negrita>Negrita</negrita>
+<subrayado>sub</subrayado>
+</parrafo>
+<lista>
+<item tipo="numerado">texto</item>
+</lista>
+
+</cuerpo>
+</documento>
+
+
+     7- Espacios de nombres. Ejemplo XML con  DTD.
+
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cli:cliente[
+<!ELEMENT cli:cliente (cli:numero_ID, cli:nombre, cli:telefono, ped:pedido)>
+<!ELEMENT cli:numero_ID (#PCDATA)>
+<!ELEMENT cli:nombre (#PCDATA)>
+<!ELEMENT cli:telefono (#PCDATA)>
+<!ELEMENT ped:pedido (ped:numero_ID, ped:articulo, ped:precio)>
+<!ELEMENT ped:numero_ID (#PCDATA)>
+<!ELEMENT ped:articulo (#PCDATA)>
+<!ELEMENT ped:precio (#PCDATA)>
+<!ATTLIST cli:cliente xmlns:cli CDATA #REQUIRED>
+<!ATTLIST ped:pedido xmlns:ped CDATA #REQUIRED>
+]>
+
+<cli:cliente xmlns:cli="https://www.w3schools.com/furniture">
+    <cli:numero_ID>1232654</cli:numero_ID>
+    <cli:nombre>Jorge Ruiz</cli:nombre>
+    <cli:telefono>99999999</cli:telefono>
+    <ped:pedido xmlns:ped="https://www.w3schools.com/furniture">
+      <ped:numero_ID>6523213</ped:numero_ID>
+      <ped:articulo>Caja de herramientas</ped:articulo>
+      <ped:precio>187,90€</ped:precio>
+    </ped:pedido>
+</cli:cliente>
