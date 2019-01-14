@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<title>Boletin Receta: Formulario</title>
+<meta charset="utf-8" />
+<!--link rel="stylesheet" href="estilos.css" /-->
+  <style>
+    td {border: 1px solid;}
+
+    th {border: 1px solid;}
+    table {border: 1px solid;}
+}
+  </style>
+
+</head>
+
+<body>
+
+<hr><h2>Boletin Receta: Formulario</h2><hr>
+ 
+<fieldset style="margin-right:1000px">
+  <legend>Formulario Receta</legend>
+<table>
+  <tr><td>NIF:</td><td><input type="text" name="contraseña"></td></tr>
+  <tr>
+    <td>Nombre:</td>
+    <td><input type="text" name="nombre" size="12" maxlength="12" placeholder="Nombre"></td>
+  </tr>
+  <tr>
+    <td>Apellidos:</td>
+    <td><input type="text" name="apellidos" size="18" maxlength="18" placeholder="Apellidos"></td>
+  </tr>
+  <tr>
+    <td>Edad:</td>
+    <td>
+      <select name="edad" multiple size="3">
+      <option>15-19
+      <option>20-29
+      <option>30-40
+    </td>
+  </tr>
+  <tr><td>Email:</td><td><input type="email"></td></tr>
+  <tr>
+    <td>Valoracion:</td>
+    <td>
+      <ol>
+        <li><input type="radio" name="valoracion" value="1"></li>
+        <li><input type="radio" name="valoracion" value="2"></li>
+        <li><input type="radio" name="valoracion" value="3"></li>
+        <li><input type="radio" name="valoracion" value="4"></li>
+        <li><input type="radio" name="valoracion" value="5"></li>
+      </ol>
+    </td></tr>
+  <tr>
+    <td>Recetas Favoritas:</td>
+    <td>
+      <input type="checkbox" name="fav1">Desayunos<br>
+      <input type="checkbox" name="fav2" checked>Brunch<br>
+      <input type="checkbox" name="fav3">Carnes<br>
+      <input type="checkbox" name="fav4">Vegetales<br>
+      <input type="checkbox" name="fav5">Postres
+    </td>
+  </tr>
+  <tr><td>Comentarios:</td><td><textarea name="comentario" rows="15" cols="40">Escribe aqui tus comentarios</textarea></td></tr>
+  <tr>
+    <td><input type="reset" value="Borrar Datos"></td>
+    <td><input type="submit" value="Enviar Datos" ></td>
+  </tr>
+
+</table>
+</fieldset>
+
+
+<a href="Receta.html"> Volver a la receta</a>
+
+
+
+
+
+<hr><h2>Final Boletin Receta</h2><hr>
+    <header>
+              <p>Mi sitio web creado en html5</p>
+    </header>
+   <nav> Navegación</nav>
+
+    <aside>
+               <p>contenido</p>
+    </aside>
+    <footer>
+        Creado por mi ( 2019).
+    </footer>
+</body>
+</html>
