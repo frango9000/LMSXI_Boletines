@@ -1,0 +1,7 @@
+body{background-color: #66AB6C}
+h1{font-variant: small-caps;}
+p{}
+p.infancia {font-family: serif;color: white;font-style: italic;}
+p.animales {font-family: sans-serif;color:#DADF7D;letter-spacing: 5px}
+p.literatura {font-family: monospace;color:#CAEB47;font-size: 20px}
+p.numeros {font-family: italic;color: #C0006D;word-spacing: 10px}
