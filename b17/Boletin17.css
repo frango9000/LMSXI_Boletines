@@ -1,0 +1,7 @@
+p{}
+h1{border-style: solid;text-align: center;}
+h2{border-left:15px double red; font-size: 15px}
+h3{border-left:20px purple dotted; border-top: 5px dotted #00F9FF; border-bottom: 10px dotted #00F9FF;border-right: 8px dotted purple; font-size: 15px}
+h4{border-top: 20px double green; border-bottom:20px double blue; font-size: 15px}
+h5{border:15px solid black;border-top:15px red dashed;border-bottom: 10px dotted black; font-size: 15px;}
+h6{border-left: 10px dotted red;border-top:15px dotted black; border-right: 10px solid black;border-bottom: 10px dashed black; font-size:  20px;}
