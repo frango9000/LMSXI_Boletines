@@ -1,0 +1,19 @@
+body{background-color: gray;font-family: sans-serif;text-align: justify;margin: 20px;}
+h1 {margin: 0;color:#3D3D3D; font-family: arial; font-size: 4em;text-align: center;text-transform: uppercase;}
+
+h2 {margin:0; padding-left: 5px;padding-bottom: 5px;color: white;font-family: arial;font-size: 2em;}
+p {margin:0;}
+article {border:2px solid red;border-bottom-right-radius:15px;overflow: hidden;}
+div.datos{padding:5px;}
+div.vida{padding: 5px;padding-left:10px;}
+
+article.politicos {border:1px  solid  #C66C00;border-top-right-radius:15px;border-bottom-left-radius:15px;overflow: hidden;}
+article.politicos h2{background-color: #C66C00;}
+article.politicos div.datos {background-color: #F08E00;}
+article.politicos div.vida {background-color: #FFA727;}
+
+
+article.artistas {border: 2px solid #FD04FD;border-top-left-radius: 15px;overflow: hidden;}
+article.artistas h2{background-color: #FD04FD}
+article.artistas div.datos {background-color: #E13CFF;}
+article.artistas div.vida {background-color: #E867FF;}
