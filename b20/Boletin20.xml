@@ -1,0 +1,218 @@
+
+1- Define Sindicación de Contenidos.
+
+Es un formato basado en el lenguaje XML que permite el acceso a contenidos mediante lectores de RSS, unas herramientas expresamente desarrolladas para este fin. Así, podemos tener constancia de la actualización de gran cantidad de páginas directamente en nuestro escritorio, cliente de correo o a través de la Web, justo al poco de ser actualizadas por su autor. La función de este tipo de servicios es la de mostrar un sumario o índice con los contenidos y noticias que ha publicado un sitio web, sin necesidad siquiera de entrar a él.
+
+2- ¿Qué es un FEED?
+Es un archivo generado por algunos sitios web (y por muchos weblogs) que contiene una versión específica de la información publicada en esa web.
+
+3- Indica dos formatos para la sindicación de contenidos.
+RSS 2,0
+Atom 1,0
+
+4- Versiones de RSS.
+0.9 y 1.0 
+0.91
+2.0
+
+5- Nombra tres ámbitos de aplicación de la gestión de contenidos.
+Periodismo
+Educacion
+Ciencia
+
+6- Explica dos ventajas y dos desventajas de la sindicación de contenidos.
+Ventajas
+Ahora tiempo
+obtenemos ultimas actualizacions
+libre virus y spam
+es facil alta y baja
+
+desventajas
+la identidad del sitio web puede ser confusa
+algunos no muestran graficos e imagenes
+los anunciantes no pueden determinar cuantos usuarios
+
+7-  Estructura de un canal RSS (versión 2.0).
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Titulo del canal</title>
+<link>http://google.es</link>
+<description>descripcion</description>
+
+<item>
+<title>Titulo del item</title>
+<link>http://google.es</link>
+<description>descripcion</description>
+</item>
+</channel>
+</rss>
+
+8-  Completa, corrige y valida  el siguiente RSS:
+
+<rss …........>
+<channel>
+<title>Ejercicios Rss</title>
+<link>http://ejerciciorss</link>
+<description>Ejemplo de la estructura y sintaxis de RSS</description>
+<pubDate>..............................</pubDate>
+<...................>es-ES</.....................>
+<image>
+               .........................
+</image>
+<item>
+<title>Que es el RSS</title>
+<link>http://apuntesunidad31</link>
+<description>Apuntes sobre sindicación de contenidos</description>
+</item>
+<item>
+<title>Para que se utiliza el RSS</title>
+<link>...........................................</link>
+<description>Apuntes sobre los ambitos de aplicación</description>
+</item>
+<item>
+<title>Como se enlaza el RSS a una pagina web</title>
+<link>http://apuntesunidad33</link>
+<description>Apuntes y codigos para enlazar el RSS a la pagina web</description>
+<autor>.................................</autor>
+<category domain ...........>.........................</category>
+</item>
+</channel>
+</rss>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>Ejercicios Rss</title>
+<link>http://ejerciciorss.com</link>
+<description>Ejemplo de la estructura y sintaxis de RSS</description>
+<pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
+<language>es-ES</language>
+<image>
+  <url>https://img.microsiervos.com/blog/logo-microsiervos.png</url>
+  <title>Ejercicios Rss</title>
+  <link>http://ejerciciorss.com</link>
+</image>
+<item>
+<title>Que es el RSS</title>
+<link>http://apuntesunidad31.com</link>
+<description>Apuntes sobre sindicación de contenidos</description>
+</item>
+<item>
+<title>Para que se utiliza el RSS</title>
+<link>http://apuntesunidad32.com</link>
+<description>Apuntes sobre los ambitos de aplicación</description>
+</item>
+<item>
+<title>Como se enlaza el RSS a una pagina web</title>
+<link>http://apuntesunidad33.com</link>
+<description>Apuntes y codigos para enlazar el RSS a la pagina web</description>
+<author>correo@web.com (nombre)</author>
+<category domain="www.google.es">Noticias</category>
+</item>
+</channel>
+</rss>
+
+9-  Completa, corrige y valida  el siguiente RSS:
+
+<rss........>
+…........................
+ <copyright>........... </copyright>
+ <pubDate>......................</pubDate>
+  <lastBuildDate>.........................</lastBuildDate>
+  <docs>.............................</docs>
+   <description>                          </description>
+   <link> …............................ </link>
+    <title>............................</title>
+   <language>........................</language>
+     <ttl>.......</ttl>
+    <image>
+     <title>............</title>
+    <url>............................</url>
+   <link>.................................</link>
+    <description>........................</description>
+    <width>........</width>
+    <height>......</height>
+     </image>
+     <managingEditor>............................</managingEditor>
+      <webMaster>............................... </webMaster>
+      <skipHours>
+      …..................
+       <skipDays>
+       …...................   
+        </skipDays>
+       <generator> …............</generator>
+       <item>
+        <title>..........................</title>
+        <description>.........................</description>
+          …...........................................................
+       <category …....... >informática</category>  
+       <category>...............</category>
+    </item>
+….........................
+    </rss>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+ <copyright>Copyright 2002, Spartanburg Herald-Journal </copyright>
+ <pubDate>Wed, 02 Oct 2002 13:00:00 GMT</pubDate>
+  <lastBuildDate>Wed, 02 Oct 2002 13:00:00 GMT</lastBuildDate>
+  <docs>http://backend.userland.com/rss</docs>
+   <description>descripcion</description>
+   <link>http://miblog.com </link>
+    <title>Mi Blog</title>
+   <language>es-ES</language>
+     <ttl>60</ttl>
+    <image>
+     <title>Mi Blog</title>
+    <url>http://miblog.com/imagen</url>
+   <link>http://miblog.com</link>
+    <description>descripcion de la imagen</description>
+    <width>144</width>
+    <height>200</height>
+     </image>
+     <managingEditor>correo@gmail.es (nombre)</managingEditor>
+      <webMaster>webmaster@gmail.com (webmaster)</webMaster>
+      <skipHours><hour>3</hour></skipHours>
+       <skipDays><day>Monday</day></skipDays>
+       <generator>MightyInHouse Content System v2.3</generator>
+       <item>
+        <title>Articulo 1</title>
+        <description>Descripcion</description>
+          <link>http://miblog.com/articulo2</link>
+       <category domain="http://miblog.com" >informática</category>
+    </item>
+</channel>
+</rss>
+10- Escribe un RSS con los elementos obligatorios y amplíalo  creando tus propios elementos (tres).
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+
+<channel xmlns:r="http://datos.com">
+
+<title>Mi Blog</title>
+<link>http://miblog.es</link>
+<description>Descripciondel blog</description>
+
+<item>
+<title>Articulo 1</title>
+<link>http://miblog.es/1</link>
+<description>Descripcion articulo 1</description>
+<r:ciudad>Vigo</r:ciudad>
+<r:pais>España</r:pais>
+<r:continente>Europa</r:continente>
+</item>
+
+<item>
+<title>Articulo 2</title>
+<link>http://miblog.es/2</link>
+<description>Descripcion articulo 2</description>
+<r:ciudad>Tokyo</r:ciudad>
+<r:pais>Japon</r:pais>
+<r:continente>Asia</r:continente>
+</item>
+
+</channel>
+</rss>
