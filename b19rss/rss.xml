@@ -1,0 +1,115 @@
+
+
+ELEMENTOS RSS 2.0
+Realizar un manual con la descripción y sintaxis de los elementos que figuran a continuación:
+
+El elemento <channel>
+
+elemento que contiene toda la informacion correspondiente al canal que publica los contenidos del feed.
+
+
+Elementos obligatorios del elemento <channel>
+
+• <description> contiene la descripcion del canal
+<description>Aqui la descripcion del canal</description>
+
+ • <link> contiene el hipervinculo a la web del canal
+<link> http://webdelcanal.com</link>
+
+• <title> contiene el titulo del canal
+<title>Titulo del canal</title>
+
+
+Elementos opcionales del elemento <channel>
+• <category> una o más categorías a las que pertenece el canal.
+<category>Ciencia</category>
+
+
+ • <cloud>  Permite que los procesos se registren en una nube para recibir notificaciones de las actualizaciones del canal
+
+<cloud domain="radio.xmlstoragesystem.com" port="80" path="/RPC2" registerProcedure="xmlStorageSystem.rssPleaseNotify" protocol="xml-rpc" />
+
+• <copyright> Aviso de derechos de autor para el contenido en el canal.
+<copyright>Copyright 2002, Spartanburg Herald-Journal</copyright>
+
+ • <docs> Una URL que apunta a la documentación para el formato utilizado en el archivo RSS.
+<docs>http://backend.userland.com/rss</docs>
+
+ • <generator> Una cadena que indica el programa utilizado para generar el canal.
+<generator>Sistema de contenido MightyInHouse v2.3</generator>
+
+ • <image>  Especifica una imagen GIF, JPEG o PNG que se puede mostrar con el canal.contiene tres subelementos requeridos y tres opcionales.
+
+<url> es la URL de una imagen GIF, JPEG o PNG que representa el canal.
+
+<title> describe la imagen, se usa en el atributo ALT de la etiqueta <img> HTML cuando el canal se representa en HTML.
+
+<link> es la URL del sitio, cuando se representa el canal, la imagen es un enlace al sitio.
+
+• <language> El idioma en el que está escrito el canal. Esto permite a los agregadores agrupar todos los sitios en un mismo idioma.
+< language> en-US</ language>
+
+• <lastBuildDate> La última vez que el contenido del canal cambió.
+<lastBuildDate>Sáb, 07 Sep 2002 0:00:01 GMT</ lastBuildDate>
+
+ • <managingEditor> Dirección de correo electrónico de la persona responsable del contenido editorial.
+<managingEditor>editor@gmail.com (Nombre editor)</managingEditor>
+
+• <pubDate> La fecha de publicación del contenido en el canal.
+<pubDate>Sáb, 07 Sep 2002 0:00:01 GMT</ pubDate>
+
+ • <skipDays>Una sugerencia para los agregadores diciéndoles qué horas pueden omitir.
+< skipDays><day>Monday</day></skipDays>
+
+ • <skipHours> Una sugerencia para los agregadores que les dicen qué días pueden saltarse.
+< skipHours> <hour>20</hour> </skipHours>
+
+• <ttl> significa tiempo para vivir.Es un número de minutos que indica cuánto tiempo se puede almacenar en caché un canal antes de actualizar desde la fuente.
+<ttl> 60 </ttl>
+
+ • <textlnput> specifica un cuadro de entrada de texto que se puede mostrar con el canal. contiene cuatro subelementos requeridos.
+
+<title> - La etiqueta del botón Enviar en el área de entrada de texto.
+
+<descripción> - Explica el área de entrada de texto.
+
+<nombre>: el nombre del objeto de texto en el área de entrada de texto.
+
+<link>: la URL de la secuencia de comandos CGI que procesa las solicitudes de entrada de texto.
+
+ • <webMaster> Dirección de correo electrónico de la persona responsable de los problemas técnicos relacionados con el canal.
+<webmaster>correo@gmail.com (Nombre webmaster)</webmaster>
+
+El elemento <item>
+Un canal puede contener cualquier número de items. Un artículo puede representar una "historia", como una historia en un periódico o revista
+
+ Elementos obligatorios del elemento <item>
+• <description> La sinopsis del artículo.
+<description>Aqui la descripcion del canal</description>
+ • <link> La URL del elemento.
+<link> http://webdelcanal.com</link>
+• <title> El título del artículo.
+<title>Titulo del canal</title>
+
+
+ Elementos  optativos del elemento <item>
+• <author> Dirección de correo electrónico del autor del artículo.
+<author>correo@gmail.com (Nombre Autor)</author>
+
+• <category> una o más categorías a las que pertenece el artículo.
+<category>Ciencia</category>
+
+• <comments>URL de una página para comentarios relacionados con el artículo.
+<comments>http://rateyourmusic.com/yaccs/commentsn/blogId=705245&itemId=271</comments>
+
+• <enclosure> un objeto multimedia que se adjunta al elemento
+<enclosure url="http://www.scripting.com/mp3s/weatherReportSuite.mp3" length="12216320" type="audio/mpeg" />
+
+• <guid>Una cadena que identifica de forma única el elemento. No hay reglas para la sintaxis de un guid. Los agregadores deben verlos como una cadena. Depende de la fuente de la fuente para establecer la singularidad de la cadena.
+<guid>http://some.server.com/weblogItem3207</guid>
+
+•<pubDate> Indica cuando el artículo fue publicado,
+<pubDate>Sun, 29 May 2012 16:41:56 GMT</pubDate>
+
+•<source> El canal RSS del que proviene el artículo.
+<source url="http://static.userland.com/tomalak/links2.xml">Tomalak's Realm</source>
