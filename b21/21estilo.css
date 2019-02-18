@@ -1,0 +1,22 @@
+/*
+biblioteca {width: 400px; margin: 10px; border:1px solid; border-top: none }
+libro {border-top: solid 1px;padding: 5px;line-height: 1.15}
+titulo {font-weight: bold; }
+autor, fechaPublicacion, titulo, libro { display:block; }
+*/
+
+/*
+biblioteca {width: 400px; margin: 5px}
+libro {border: solid 3px;padding: 15px;line-height: 1.15;margin: 10px; background-color: green}
+titulo {font-weight: bold; }
+autor, fechaPublicacion, titulo, libro { display:block; }
+*/
+
+
+biblioteca {width: 400px; margin: 5px;background-color: gray}
+libro {border: solid 3px;line-height: 1.15;margin: 10px;background-color: green}
+titulo {font-weight: bold; border-bottom: solid 2px ;background-color: white ;padding: 2px}
+autor, fechaPublicacion, titulo, libro { display:block; }
+autor, fechaPublicacion {margin: 5px}
+
+
