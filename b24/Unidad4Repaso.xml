@@ -1,0 +1,150 @@
+REPASO UNIDAD 4
+
+1- Dado el siguiente XML:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<centro>
+  <nombreCentro>Daniel Castelao</nombreCentro>
+  <ciclos>
+    <ciclo id="ASIR">
+      <nombre>Administración de Sistemas Informáticos en Red</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo>2009</decretoTitulo>
+    </ciclo>
+    <ciclo id="DAM">
+      <nombre>Desarrollo de Aplicaciones Multiplataforma</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo>2010</decretoTitulo>
+    </ciclo>
+    <ciclo id="DAW">
+      <nombre>Desarrollo de Aplicaciones Web</nombre>
+      <grado>Superior</grado>
+      <decretoTitulo>2010</decretoTitulo>
+    </ciclo>
+    <ciclo id="SMR">
+      <nombre>Sistemas Microinformáticos y Redes</nombre>
+      <grado>Medio</grado>
+      <decretoTitulo>2008</decretoTitulo>
+    </ciclo>
+  </ciclos>
+</centro>
+Obtener:
+a)
+CICLOS DANIEL CASTELAO:
+1.	Administración de Sistemas Informáticos en Red
+2.	Desarrollo de Aplicaciones Multiplataforma
+3.	Desarrollo de Aplicaciones Web
+4.	Sistemas  Microinformáticos y Redes
+b)
+DANIEL CASTELAO
+Administración de Sistemas Informáticos en Red	Superior	2009
+Desarrollo de Aplicaciones Multiplataforma	Superior	2010
+Desarrollo de Aplicaciones Web	Superior	2010
+Sistemas Microinformáticos y Redes	Medio	2009
+
+
+
+
+
+
+
+
+c)
+
+  
+Administración de Sistemas Informáticos en Red	Superior	2009
+Desarrollo de Aplicaciones Multiplataforma	Superior	2010
+Desarrollo de Aplicaciones Web	Superior	2010
+Sistemas Microinformáticos y Redes	Medio	2009
+
+
+
+
+
+
+2- Valida los  XMLs siguientes:
+
+a)
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/local/DANIELCASTELAO/fsancheztemprano/Documentos/LMSXI/tst/repaso4/2a.xsd">
+  <nombre>Marta</nombre>
+  <apellidos>Pérez</apellidos>
+<direccion>
+<calle>G Barbón</calle>
+<numero>56</numero>
+</direccion>
+</alumno>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="alumno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="apellidos" type="xs:string"/>
+  <xs:element name="direccion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="calle" type="xs:string"/>
+        <xs:element name="numero" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+b)
+
+<libro>
+<titulo>John Smith</titulo>
+<autor>1032</autor>
+<editorial>2011-01-19</editorial>
+</libro>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="libro">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="titulo" type="xs:string"/>
+        <xs:element name="autor" type="xs:string"/>
+        <xs:element name="editorial" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+c)
+
+<alumno numero="5657" dni="43111544A">
+<nombre>Juan Garcia</nombre>
+<direccion>Avenida de la Fuente 6 Vigo</direccion>
+<telefonos>
+<fijo>1234</fijo>
+<movil>5678</movil>
+</telefonos>
+</alumno>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="alumno">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre" type="xs:string"/>
+        <xs:element name="direccion" type="xs:string"/>
+  <xs:element name="telefonos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fijo" type="xs:string"/>
+        <xs:element name="movil" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+      </xs:sequence>
+      <xs:attribute name="dni" type="xs:string" use="required"/>
+      <xs:attribute name="numero" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,95 @@
+div1 nombreCentro:before {
+	content: "Ciclos ";
+}
+div1 nombreCentro {
+		font-weight: bold;
+		font-size: 20pt;
+		text-decoration: underline;
+		display: block;
+		text-transform: uppercase;
+		}
+
+div1 ciclo {
+		display: list-item;
+		list-style-type: decimal;
+		margin: 1em;
+		margin-left: 2em;
+		padding-left: 5px
+		
+		}
+div1 grado, div1 decretoTitulo {
+	display: none;
+}
+
+
+
+div2 centro{
+	margin-top: 50px;
+	display: table;
+	border-collapse: collapse;
+	margin-right: auto;
+	margin-left: 10px;
+}
+div2 nombreCentro{
+		font-weight: bold;
+		font-size: 20pt;
+		text-decoration: underline;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+		display: table-caption;
+		text-align: center
+}
+div2 ciclo{
+	display: table-row;
+}
+div2 nombre, div2 grado, div2 decretoTitulo{
+	display: table-cell;
+	border: 1px solid black;
+
+	padding: 1px 10px;
+	width: auto;
+}
+div2 grado, div2 decretoTitulo{
+	text-align: center;
+}
+div2 decretoTitulo{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+
+
+div3 {
+	margin-top: 50px;
+	width: 800px;
+  	border:1px solid black;
+  	padding:2px;
+  	display: block;
+	margin-left: 10px;
+}
+div3 centro{
+	display: table;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+div3 nombreCentro{
+	display: none;
+}
+div3 ciclo{
+	display: table-row;	
+	margin-left: 50px;
+}
+div3 nombre, div3 grado, div3 decretoTitulo{
+	display: table-cell;
+	border: 1px solid black;
+	padding: 1px 10px;
+	width: auto;
+	background-color: #aaa;
+	text-align: center;
+}
+div3 decretoTitulo{
+	padding-left: 30px;
+	padding-right: 30px;
+}
