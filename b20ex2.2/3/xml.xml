@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<libro codigo="x1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/local/DANIELCASTELAO/fsancheztemprano/Descargas/LMSXI/Examen2.2/6481/3/xml.xsd">
+<titulo>Fundamentos de XML Schema</titulo>
+<autor dni="523S">Allen Wyke</autor>
+<autor dni="524S">Andrew Watt</autor>
+<precio>34.50</precio>
+<fecha>2014-03-17T09:00:00</fecha>
+<editorial>Editorial 1</editorial>
+</libro>

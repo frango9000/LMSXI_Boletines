@@ -1,0 +1,61 @@
+/* a1
+
+titulo{
+	font-weight: bold;
+	text-transform: uppercase;
+	padding-left: 4px;
+	}
+
+pintor{
+	display: list-item;
+	list-style-type: decimal;
+	list-style-position: inside;
+	}
+
+*/
+
+
+/* a2 
+titulo{
+	text-transform: uppercase;
+	font-style: italic;
+	text-decoration: underline;
+	}
+
+pintor{
+	margin-left: 4px;
+	display: list-item;
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	}
+*/
+
+
+/* b */
+
+pintores{	}
+titulo{
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+pintor{display: table;
+	border: 1px solid black;
+	width: 600px;
+	border-spacing: 10px;
+	background-color:#888888;
+
+	margin-top:7px;
+	}
+
+nombre, nacido, fallecido {
+	padding-right: 5px;
+}
+nombre{
+	font-weight: bold;
+	}
+
+nacionalidad{
+	display: none;
+}
+/**/
