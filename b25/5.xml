@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/local/DANIELCASTELAO/fsancheztemprano/Documentos/LMSXI/b25/5.xsd"> 
+<alumno dni="50000001A">
+<nombre>Juan Garcia</nombre>
+<direccion>
+<calle>Avenida de la Fuente</calle>
+<numero>6</numero>
+<ciudad>Vigo</ciudad>
+<provincia>PO</provincia>
+</direccion>
+<telefono>924555555</telefono></alumno>
+<alumno dni="50000001A">
+<nombre>Jose Sanchez</nombre>
+<direccion>
+<calle>Calle Ancha</calle>
+<numero>3</numero>
+<ciudad>Barcelona</ciudad>
+<provincia>Barcelona</provincia>
+</direccion>
+<telefono>924550000</telefono>
+</alumno>
+</alumnos>
