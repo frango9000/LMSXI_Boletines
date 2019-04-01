@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="materiales">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="material" type="xs:string"/>
+        <xs:element name="altura">
+          <xs:simpleType>
+            <xs:restriction base="xs:integer">
+              <xs:enumeration value="10"/>
+              <xs:enumeration value="12"/>
+              <xs:enumeration value="13"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="precio" type="xs:string"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

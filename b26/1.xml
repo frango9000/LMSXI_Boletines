@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<materiales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/local/DANIELCASTELAO/fsancheztemprano/Documentos/LMSXI/repo/LMSXI_Boletines/b26/1.xsd">
+  <material>columna</material>
+  <altura>12</altura>
+  <precio>10,55</precio>
+</materiales>

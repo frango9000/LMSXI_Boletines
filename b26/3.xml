@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<temperaturas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/local/DANIELCASTELAO/fsancheztemprano/Documentos/LMSXI/repo/LMSXI_Boletines/b26/3.xsd">
+  <dia>10</dia>
+  <maxima>-10</maxima>
+  <minima>41.999</minima>
+</temperaturas>

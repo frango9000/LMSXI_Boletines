@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<alumno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="/home/local/DANIELCASTELAO/fsancheztemprano/Documentos/LMSXI/repo/LMSXI_Boletines/b26/4.xsd">
+  <nombre>Juan Garcia</nombre>
+  <edad>0</edad>
+  <electrodomestico>Sony</electrodomestico>
+  <letra>a</letra>
+  <let>y</let>
+  <letras>ABC</letras>
+  <clave>abc123</clave>
+  <password>123456789</password>
+  <direccion>
+    <calle>Avenida de la Fuente</calle>
+    <ciudad>Vigo</ciudad>
+  </direccion>
+  <telefono>986000000</telefono>
+</alumno>
