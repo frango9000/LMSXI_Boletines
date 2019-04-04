@@ -1,0 +1,38 @@
+BOLETÍN 30
+Dado el siguiente documento XML, escribe las expresiones XPath que devuelvan la respuesta deseada.
+
+
+    1. Nombre de los módulos que se imparten en el Colegio:
+       Aplicaciones web
+       Gestión de bases de datos
+       Lenguajes de marcas y sistemas de gestión de información
+       Implantación de aplicaciones web
+
+
+    2. Nombre de los módulos del ciclo ASIR:
+       Gestión de bases de datos
+       Lenguajes de marcas y sistemas de gestión de información
+       Implantación de aplicaciones web
+
+
+    3. Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo:
+       Aplicaciones web
+       Implantación de aplicaciones web
+
+
+    4. Nombre de los módulos de menos de 5 horas semanales:
+       Aplicaciones web
+       Lenguajes de marcas y sistemas de gestión de información
+
+
+    5. Nombre de los módulos que se imparten en el primer curso de ASIR:
+       Gestión de bases de datos
+       Lenguajes de marcas y sistemas de gestión de información
+
+
+    6. Horas semanales de los módulos de más de 3 horas semanales:
+       4
+       5
+       5
+
+       
