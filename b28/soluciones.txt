@@ -1,0 +1,54 @@
+1- Escribe las expresiones Xpath que seleccionen:
+
+a)  	cliente="Daniel Castelao"
+//inventario/@cliente
+
+b) 	id="PC"
+   	id="Monitor"
+   	id="Proyector"
+//dispositivo/@id
+
+c) 	<modelo>Sierra DT6300A</modelo>
+    	<modelo>HW191DP</modelo>
+	<modelo>EMP-62</modelo>
+//modelos/modelo/modelo
+
+d)	1º DAM (mañana)
+	1º ASIR (tarde)
+	2º DAM (mañana)
+	2º ASIR (tarde)
+//ocupante/text()
+
+e)	2º DAM (mañana)
+	2º ASIR (tarde)
+//espacio[@id="A112"]/ocupante/text()
+
+f)	id="PC"
+	id="Proyector"
+//modelo[dispositivo/@id="PC"]/dispositivo/@id|//modelo[dispositivo/@id="Proyector"]/dispositivo/@id
+
+g)	1º DAM (mañana)
+      1º ASIR (tarde)
+//espacio[@id="A116"]/ocupante/text()
+
+
+
+2- Indica los nodos seleccionados por: 
+
+a)	//marca
+
+
+b)	//modelo[@id="E001"]/modelo/text()
+
+
+c) 	//espacio[@id="A112"]/ocupante[last()]
+
+
+d)	/inventario/espacios/ocupante
+
+
+e)	/inventario/espacios//ocupante/text()
+
+
+f)	//modelos/modelo/text()
+
