@@ -1,0 +1,63 @@
+1
+
+a) Selecciona el elemento raiz AAA
+//AAA
+
+b) Selecciona todos los elementos CCC que son hijos del elemento raiz AAA
+//AAA/CCC
+
+c) Selecciona todos los elementos BBB que son hijos de DDD, que a su vez son hijos del elemento raiz AAA.
+//AAA/DDD/BBB
+
+
+
+2
+
+a) Selecciona todos los elementos BBB
+//BBB
+
+b) Indica los elementos seleccionados por la expresión siguiente: /DDD/BBB
+No selecciona nada
+
+
+
+3
+
+a) Selecciona todos los elementos contenidos en el camino /AAA/CCC/DDD.
+//AAA/CCC/DDD
+
+b) Selecciona todos los elementos BBB incluidos en exactamente 3 ancestros.
+/*/*/*/BBB
+
+c) Indica los elementos seleccionados por: //*
+Todos los elementos por separado y sus elementos contenidos
+
+
+
+4
+
+a) Selecciona el primer hijo BBB del elemento AAA
+//AAA/BBB[1]
+
+b) Selecciona el último hijo BBB del elemento AAA
+//AAA/BBB[last()-1]
+
+
+
+5
+
+a) Selecciona todos los atributos 'id'
+//@id
+
+b) Selecciona los elementos BBB que contienen un atributo 'id'
+//BBB[@id]
+
+
+
+6
+
+a) Selecciona los elementos BBB cuyo atributo 'id' tiene por valor 'b1'
+//BBB[@id = 'b1']
+
+b) Selecciona los elementos BBB cuyo atributo 'name' tiene por valor 'bbb'
+//BBB[@name = 'bbb']
