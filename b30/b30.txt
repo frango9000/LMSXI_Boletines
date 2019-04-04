@@ -8,31 +8,41 @@ Dado el siguiente documento XML, escribe las expresiones XPath que devuelvan la 
        Lenguajes de marcas y sistemas de gestión de información
        Implantación de aplicaciones web
 
+//modulo/nombre/text()
+
 
     2. Nombre de los módulos del ciclo ASIR:
        Gestión de bases de datos
        Lenguajes de marcas y sistemas de gestión de información
        Implantación de aplicaciones web
 
+//modulo[ciclo = "ASIR"]/nombre/text()
+
 
     3. Nombre de los módulos que se imparten en el segundo curso de cualquier ciclo:
        Aplicaciones web
        Implantación de aplicaciones web
+
+//modulo[curso = 2]/nombre/text()
 
 
     4. Nombre de los módulos de menos de 5 horas semanales:
        Aplicaciones web
        Lenguajes de marcas y sistemas de gestión de información
 
+//modulo[horasSemanales < 5]/nombre/text()
+
 
     5. Nombre de los módulos que se imparten en el primer curso de ASIR:
        Gestión de bases de datos
        Lenguajes de marcas y sistemas de gestión de información
+
+//modulo[curso = 1][ ciclo = "ASIR"]/nombre/text()
 
 
     6. Horas semanales de los módulos de más de 3 horas semanales:
        4
        5
        5
-
        
+//modulo[horasSemanales > 3]/horasSemanales/text()
