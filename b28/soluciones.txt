@@ -36,19 +36,25 @@ g)	1º DAM (mañana)
 2- Indica los nodos seleccionados por: 
 
 a)	//marca
-
+      <marca>Inves</marca>
+      <marca>Inves</marca>
+      <marca>Epson</marca>
 
 b)	//modelo[@id="E001"]/modelo/text()
-
+Sierra DT6300A
 
 c) 	//espacio[@id="A112"]/ocupante[last()]
-
+<ocupante>2º ASIR (tarde)</ocupante>
 
 d)	/inventario/espacios/ocupante
-
+Ningún nodo
 
 e)	/inventario/espacios//ocupante/text()
+1º DAM (mañana)
+1º ASIR (tarde)
+2º DAM (mañana)
+2º ASIR (tarde)
 
 
 f)	//modelos/modelo/text()
-
+Ningún nodo
