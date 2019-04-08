@@ -1,0 +1,32 @@
+1
+//libro[autor="Mario Vargas Llosa"]
+
+2
+//libro[fechaPublicacion/@año=1969]/autor
+//fechaPublicacion[@año=1969]/preceding-sibling::autor
+
+3
+//libro[fechaPublicacion/@año = //libro[titulo ="La vida está en otra parte"]/fechaPublicacion/@año]/titulo
+
+4
+//libro[autor=//libro[titulo="Pantaleón y las visitadoras"]/autor]/titulo
+
+5
+//libro[fechaPublicacion/@año=//libro[titulo="La vida está en otra parte"]/fechaPublicacion/@año]/titulo
+
+6
+//self::titulo/text()
+//libro/child::titulo/text()
+//autor/preceding-sibling::*/text()
+
+7
+//libro[2]/self::*
+/biblioteca/child::*[position()=2]
+//libro[1]/following-sibling::*[position()=2]
+
+8
+//libro/fechaPublicacion[@año=1969]/preceding-sibling::*
+//libro[fechaPublicacion/@año = 1969]//self::titulo|//libro[fechaPublicacion/@año = 1969]//self::autor
+
+
+
