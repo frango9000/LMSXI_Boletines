@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<rock>
+  <personas>
+    <persona nombre="Ian Gillan">
+      <nacido>
+        <fecha>1945</fecha>
+        <lugar>Inglaterra</lugar>
+      </nacido>
+      <instrumento>voz</instrumento>
+    </persona>
+    <persona nombre="Jon Lord">
+      <nacido>
+        <fecha>1941</fecha>
+        <lugar>Inglaterra</lugar>
+      </nacido>
+      <fallecido>
+        <fecha>2012</fecha>
+      </fallecido>
+      <instrumento>órgano Hammond</instrumento>
+    </persona>
+    <persona nombre="Ritchie Blackmore">
+      <nacido>
+        <fecha>1945</fecha>
+        <lugar>Inglaterra</lugar>
+      </nacido>
+      <instrumento>guitarra</instrumento>
+    </persona>
+    <persona nombre="Ian Paice">
+      <nacido>
+        <fecha>1948</fecha>
+        <lugar>Inglaterra</lugar>
+      </nacido>
+      <instrumento>batería</instrumento>
+    </persona>
+    <persona nombre="Roger Glover">
+      <nacido>
+        <fecha>1945</fecha>
+        <lugar>País de Gales</lugar>
+      </nacido>
+      <instrumento>bajo</instrumento>
+    </persona>
+      <persona nombre="David Coverdale">
+      <nacido>
+        <fecha>1951</fecha>
+        <lugar>Inglaterra</lugar>
+      </nacido>
+      <instrumento>voz</instrumento>
+    </persona>
+  </personas>
+
+  <grupos>
+    <grupo nombre="Deep Purple">
+      <fundado fecha="1968" />
+      <albumes>
+         
+           <album nombre="Deep Purple" fecha="1969" />
+     <album nombre="Machine Head" fecha="1972" />
+     
+        <album nombre="Who do you think we are" fecha="1973" />
+      </albumes>
+    </grupo>
+    <grupo nombre="Whitesnake">
+      <fundado fecha="1978" />
+      <albumes>
+        <album nombre="Lovehunter" fecha="1979" />
+        <album nombre="Whitesnake" fecha="1987" />
+      </albumes>
+    </grupo>
+    <grupo nombre="Rainbow">
+      <fundado fecha="1975" />
+      <albumes>
+        <album nombre="Rising" fecha="1976" />
+        <album nombre="Down to Earth" fecha="1979" />
+      </albumes>
+    </grupo>
+  </grupos>
+
+  <miembros>
+    <miembro grupo="Deep Purple" nombre="Ian Gillan" desde="1968" hasta="1973" />
+    <miembro grupo="Deep Purple" nombre="Jon Lord" desde="1968" hasta="1976" />
+    <miembro grupo="Deep Purple" nombre="Ritchie Blackmore" desde="1968" hasta="1975" />
+    <miembro grupo="Deep Purple" nombre="Ian Paice" desde="1968" hasta="" />
+    <miembro grupo="Deep Purple" nombre="Roger Glover" desde="1968" hasta="1973" />
+    <miembro grupo="Deep Purple" nombre="David Coverdale" desde="1973" hasta="1976" />
+    <miembro grupo="Whitesnake" nombre="David Coverdale" desde="1978" hasta="" />
+    <miembro grupo="Whitesnake" nombre="Jon Lord" desde="1978" hasta="1984" />
+    <miembro grupo="Whitesnake" nombre="Ian Pace" desde="1979" hasta="1982" />
+    <miembro grupo="Rainbow" nombre="Ritchie Blackmore" desde="1975" hasta="" />
+  </miembros>
+</rock>

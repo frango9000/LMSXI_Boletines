@@ -1,0 +1,54 @@
+  1- Álbumes de Deep Purple:
+  //grupo[@nombre="Deep Purple"]/albumes/album
+
+    <album nombre="Deep Purple" fecha="1969"/>
+    <album nombre="Machine Head" fecha="1972"/>
+    <album nombre="Who do you think we are" fecha="1973"/>
+
+   
+ 2- Músicos nacidos en Inglaterra:
+//persona[nacido/lugar="Inglaterra"]/@nombre
+     nombre="Ian Gillan"
+     nombre="Jon Lord"
+     nombre="Ritchie Blackmore"
+     nombre="Ian Paice"
+     nombre="David Coverdale"
+
+    3- Músicos que estuvieron menos de cinco años en un grupo:
+//miembro[number(@hasta)-number(@desde)<5]
+    <miembro grupo="Deep Purple" nombre="David Coverdale" desde="1973" hasta="1976"/>
+    <miembro grupo="Whitesnake" nombre="Ian Pace" desde="1979" hasta="1982"/>
+
+   4- Lugar y fecha de nacimiento de la persona que ha estado 7 años en un grupo.
+   //persona[@nombre=//miembro[number(@hasta)-number(@desde)=7]/@nombre]/nacido/*
+      <fecha>1945</fecha>
+        <lugar>Inglaterra</lugar>
+
+    5- Álbumes de grupos en los que ha estado Ritchie Blackmore:
+//grupo[@nombre=//miembro[@nombre="Ritchie Blackmore"]/@grupo]/albumes/album
+    <album nombre="Deep Purple" fecha="1969"/>
+    <album nombre="Machine Head" fecha="1972"/>
+    <album nombre="Who do you think we are" fecha="1973"/>
+    <album nombre="Rising" fecha="1976"/>
+    <album nombre="Down to Earth" fecha="1979"/>
+
+    6- Cantantes de Deep Purple:
+//persona[@nombre=//miembro[@grupo="Deep Purple"]/@nombre and instrumento="voz"]/@nombre
+     nombre="Ian Gillan"
+     nombre="David Coverdale"
+     
+7- Obtén los miembros del grupo fundado en 1968.
+
+B) Indica nodos ssleccionados por:
+
+8-   //persona[last()]/instrumento
+
+9- //persona[2]/nacido/fecha/following-sibling::*
+
+10- //persona[2]/nacido/fecha/preceding-sibling::*
+
+11- //instrumento[3]/preceding-sibling::*
+
+12- //@nombre | //instrumento
+    
+
