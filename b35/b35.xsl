@@ -8,12 +8,42 @@
           <xsl:value-of select="numdia"/>
           <br/>
         </xsl:for-each>
-        
         <h1>2)</h1>
-        <xsl:for-each select="//dia[numdia>2]">
-        <xsl:value-of select="numdia"/> <xsl:value-of select="tarea/nombre"/><br/>
+        <xsl:for-each select="//dia[numdia&gt;2]/tarea">
+          <xsl:value-of select="../numdia"/>
+          <xsl:value-of select="nombre"/>
+          <br/>
         </xsl:for-each>
-        
+        <h1>3)</h1>
+        <table>
+          <tr>
+            <th>Dia</th>
+            <th>Nombre</th>
+            <th>Prioridad</th>
+            <th>H Inicio</th>
+            <th>H fin</th>
+          </tr>
+          <xsl:for-each select="//tarea">
+            <tr>
+              <td>
+                <xsl:value-of select="../numdia"/>
+                <br/>
+              </td>
+              <td>
+                <xsl:value-of select="nombre"/>
+              </td>
+              <td>
+                <xsl:value-of select="@prioridad"/>
+              </td>
+              <td>
+                <xsl:value-of select="hora-ini"/>
+              </td>
+              <td>
+                <xsl:value-of select="hora-fin"/>
+              </td>
+            </tr>
+          </xsl:for-each>
+        </table>
       </body>
     </html>
   </xsl:template>
