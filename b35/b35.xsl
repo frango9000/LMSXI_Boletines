@@ -14,7 +14,7 @@
           <xsl:value-of select="nombre"/>
           <br/>
         </xsl:for-each>
-        <h1>3)</h1>
+        <h1>4)</h1>
         <table>
           <tr>
             <th>Dia</th>
