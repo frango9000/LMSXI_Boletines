@@ -40,7 +40,7 @@
           </xsl:for-each>
         </ul>
         <h1>4)</h1>
-        <table>
+        <table border="1">
           <tr>
             <th>Dia</th>
             <th>Nombre</th>
