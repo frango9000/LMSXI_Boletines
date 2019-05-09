@@ -1,0 +1,58 @@
+1
+for $y in doc("xml")//libro
+return upper-case($y/titulo)
+
+
+2
+for $y in doc("xml")//libro
+order by $y/@anho
+(:return concat( $y/titulo," ", $y/@anho) :)
+(:return <libro>{data($y/@anho), $y/titulo}</libro>:)
+return ($y/titulo, $y/@anho )
+
+
+3
+for $y in doc("xml")//libro
+where ($y/precio=65.95)
+return $y/titulo/text()
+
+
+4
+for $y in doc("xml")//libro
+where $y/@anho < 2000
+return $y/titulo 
+
+
+5
+for $y in doc("xml")//libro
+where $y/editorial = "Addison-Wesley" and $y/@anho > 1992
+return $y/titulo
+
+
+6
+for $y in doc("xml")//libro
+where count($y/autor)>1
+return ( $y/@anho, $y/titulo )
+
+
+7
+for $y in doc("xml")//libro
+where count($y/autor)<1
+return ( $y/@anho, $y/titulo )
+
+
+8
+for $y in distinct-values(doc("xml")//apellido)
+order by($y)
+return $y
+
+
+9
+for $y in doc("xml")//libro
+return<result>{$y/titulo,$y/autor}</result>
+
+
+
+10
+for $x in doc("xml")//libro
+return ($x/titulo, <numAutores>{count($x/autor)}</numAutores>)
