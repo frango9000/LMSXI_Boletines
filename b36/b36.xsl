@@ -106,7 +106,7 @@
           </xsl:for-each>
         </table>
         <p><b>El numero de libros es</b> = <xsl:value-of select="count(//libro)"/></p>
-        <h1>G)</h1>
+        <h1>H)</h1>
         <h2>Mi Biblioteca</h2>
         <table border="1">
           <xsl:for-each select="//libro">
