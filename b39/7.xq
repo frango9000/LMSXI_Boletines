@@ -1,0 +1,1 @@
+replace value of node //libro[last()]/precio with 3000
